@@ -1,5 +1,11 @@
 # Gallium OS on Lenovo ThinkPad 13 Chromebook
 
+WARNING! These instruction are not complete yet and containing some outdated guidelines.
+
+Use these instructions for audio:
+
+* [Chromebook Sentry](https://github.com/Backpackstudio/chromebook-sentry)
+
 It's a challenge to get Linux to run on Lenovo ThinkPad 13 Chromebook. Gallium OS is created especially for Chromebooks. But there are still issues on Lenovo ThinkPad 13 Chromebook. The biggest challenge is to get audio working. 
 
 ## Installing Gallium OS on Thinkpad
