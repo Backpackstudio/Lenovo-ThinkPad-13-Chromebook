@@ -1,0 +1,4 @@
+#!/bin/sh
+
+model=$(dmidecode -s system-product-name | tr [:lower:] [:upper:])
+echo "Model name: $model"

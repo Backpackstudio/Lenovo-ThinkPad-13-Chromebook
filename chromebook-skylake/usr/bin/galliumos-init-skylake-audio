@@ -1,0 +1,16 @@
+#!/bin/sh
+
+model=$(dmidecode -s system-product-name | tr [:lower:] [:upper:])
+
+echo "configuring for $model"
+
+case "$model" in
+  SENTRY|CAVE|ASUKA|LARS)
+    echo "setting alsa config"
+    ## in a backgrounded subshell, to delay without blocking progress
+    (sleep 5 && alsaucm -c sklnau8825max set _verb HiFi) &
+    ;;
+  *)
+    echo "nothing to do"
+    ;;
+esac
